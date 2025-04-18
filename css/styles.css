@@ -1,0 +1,132 @@
+/* ROOT FOR CUSTOM CSS PROPERTIES */
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+/* CUSTOM FONT LOADING */
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/static/Inter-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/static/Inter-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/static/Inter-Bold.ttf");
+  font-weight: 700;
+}
+
+/* BASIC REQUIRED STARTING BOILERPLATE */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--grey-900);
+  color: var(--white);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  padding-block: 110px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50px;
+}
+
+main {
+  background: var(--grey-800);
+  width: min(calc(100% - 45px), 21.875rem);
+  margin-inline: auto;
+  border-radius: 10px;
+  padding-block: 20px;
+  margin-bottom: 25px;
+}
+
+.wrapper {
+  width: calc(100% - 50px);
+  margin-inline: auto;
+  text-align: center;
+}
+
+@media (min-width: 56.25em) {
+  main {
+    padding-block: 35px;
+  }
+
+  .wrapper {
+    width: calc(100% - 75px);
+  }
+}
+
+.avatar-img {
+  width: 75px;
+  margin-inline: auto;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-block: 30px 5px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: inherit;
+  color: var(--green);
+}
+
+p {
+  margin-block: 30px 24px;
+}
+
+ul {
+  display: grid;
+  gap: 15px;
+}
+
+li {
+  list-style: none;
+}
+
+a.social-link {
+  display: inline-block;
+  width: 100%;
+  background: var(--grey-700);
+  color: var(--white);
+  font-weight: 600;
+  border-radius: 10px;
+  padding-block: 15px;
+}
+
+a.social-link:hover,
+a.social-link:focus {
+  background: var(--green);
+  color: var(--grey-900);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
