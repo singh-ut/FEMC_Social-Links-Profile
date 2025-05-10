@@ -24,6 +24,14 @@
   font-weight: 700;
 }
 
+html,
+body {
+  background: var(--grey-900);
+  color: var(--white);
+  height: 100%;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
 /* BASIC REQUIRED STARTING BOILERPLATE */
 *,
 *::before,
@@ -34,11 +42,8 @@
 }
 
 body {
-  background: var(--grey-900);
-  color: var(--white);
-  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 0.875rem;
-  padding-block: 110px;
+  align-content: center;
 }
 
 a {
